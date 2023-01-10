@@ -8,6 +8,7 @@ RUN apt-get install -y gcc
 RUN apt-get install -y default-jdk
 RUN apt-get install -y mono-complete
 RUN apt-get install -y build-essential
+RUN apt-get install -y ghc
 RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_19.x | bash - && apt-get install -y nodejs
 CMD ["/bin/bash", "detonate.sh"]
